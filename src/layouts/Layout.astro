@@ -1,5 +1,8 @@
 ---
 import {SEO} from "astro-seo";
+import SpeedInsights from "@vercel/speed-insights/astro"
+import Analytics from '@vercel/analytics/astro'
+
 
 import '@/styles/globals.css'
 import FooterMenu from '@/components/FooterMenu.astro'
@@ -45,6 +48,8 @@ import FooterMenu from '@/components/FooterMenu.astro'
     />
 </head>
 <body>
+<SpeedInsights/>
+<Analytics/>
 <slot/>
 <FooterMenu/>
 </body>
