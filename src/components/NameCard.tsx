@@ -18,10 +18,10 @@ export function NameCard({formal, data}: NameCardProps) {
     </CardHeader>
     <CardContent>
       <div className="flex flex-wrap gap-1.5 sm:gap-2">
-        {/* TODO: Display "no diminutives" if empty */}
-        {data.diminutives.map((dim) => (<Badge key={dim} variant="secondary" className="text-xs sm:text-sm">
-          {dim}
-        </Badge>))}
+        {data.diminutives.length > 0 ? (data.diminutives.map((diminutive: string) => (
+          <Badge key={diminutive} variant="secondary" className="text-xs sm:text-sm">
+            {diminutive}
+          </Badge>))) : (<p className="text-sm text-muted-foreground">No diminutives available.</p>)}
       </div>
     </CardContent>
   </Card>);
