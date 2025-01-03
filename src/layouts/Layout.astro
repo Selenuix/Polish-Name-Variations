@@ -1,4 +1,6 @@
 ---
+import {SEO} from "astro-seo";
+
 import '@/styles/globals.css'
 import FooterMenu from '@/components/FooterMenu.astro'
 ---
@@ -6,11 +8,43 @@ import FooterMenu from '@/components/FooterMenu.astro'
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width"/>
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
+    <link rel="icon" href="/favicon.ico"/>
     <meta name="generator" content={Astro.generator}/>
-    <title>Polish Name Variations</title>
+    <title>Polish Names Variations - Search, Filter, and Explore</title>
+    <SEO
+            charset="utf-8"
+            title="Polish Names Variations - Search, Filter, and Explore"
+            description="Discover Polish names and their diminutives. Search, filter, and sort names with ease. Perfect for linguists, name enthusiasts, and cultural explorers."
+            openGraph={{
+              basic: {
+                title: "Polish Names Variations - Search and Explore", type: "image", // TODO: add image
+
+                image: "https://user-images.githubusercontent.com/5182256/131216951-8f74f425-f775-463d-a11b-0e01ad9fce8d.png",
+              }
+            }}
+            extend={{
+              link: [{
+                rel: "icon", type: 'image/png', sizes: "32x32", href: "/favicon-32x32.png"
+              }, {
+                rel: "icon", type: 'image/png', sizes: "16x16", href: "/favicon-16x16.png"
+              }, {rel: "apple-touch-icon", sizes: "180x180", href: "/apple-touch-icon.png"}, {
+                rel: 'manifest',
+                href: "/site.webmanifest"
+              },],
+
+              meta: [{
+                name: "twitter:image",
+                content: "https://user-images.githubusercontent.com/5182256/131216951-8f74f425-f775-463d-a11b-0e01ad9fce8d.png",
+              }, {name: "twitter:title", content: "Polish Names Variations"}, {
+                name: "twitter:description",
+                content: "Search, filter, and sort Polish names and diminutives. Explore names easily."
+              }, {
+                name: "keywords",
+                content: "Polish names, name diminutives, name search, cultural names, linguistics, name database"
+              }, {name: "author", content: "Selenuix"}, {name: "generator", content: Astro.generator}],
+            }}
+    />
 </head>
 <body>
 <slot/>

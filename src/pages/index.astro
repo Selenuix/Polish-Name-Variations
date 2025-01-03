@@ -1,8 +1,16 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import {NameFinder} from "../components/NameFinder";
+import Layout from '@/layouts/Layout.astro';
+import {NameFinder} from "@/components/NameFinder";
 ---
 
 <Layout>
-    <NameFinder client:load/>
+    <div class="container px-4 sm:px-6 py-6 sm:py-8 max-w-7xl mx-auto">
+        <div class="space-y-2 mb-6 sm:mb-8 text-center">
+            <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight">Polish Name Variations</h1>
+            <p class="text-sm sm:text-base text-muted-foreground max-w-2xl mx-auto">
+                Discover formal and diminutive versions of Polish names
+            </p>
+        </div>
+        <NameFinder client:visible/>
+    </div>
 </Layout>
