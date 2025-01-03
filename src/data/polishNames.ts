@@ -975,5 +975,7 @@ export const polishNames: Record<string, NameVariations> = {
     formal: "Żaneta", diminutives: ["Żanetka", "Żanet"], gender: "female"
   }, "Żywia": {
     formal: "Żywia", diminutives: ["Żywka", "Żywa"], gender: "female"
+  }, "Sonia": {
+    formal: "Sonia", diminutives: ["Sońka", "Sonieczka", "Soniusia"], gender: "female"
   },
 }
