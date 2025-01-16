@@ -13,7 +13,7 @@ React, TypeScript, and Tailwind CSS.
 
 ## Tech Stack
 
-- React 18
+- React 19
 - TypeScript
 - Tailwind CSS
 - shadcn/ui components
