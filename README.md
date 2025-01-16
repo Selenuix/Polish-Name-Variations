@@ -23,7 +23,7 @@ React, TypeScript, and Tailwind CSS.
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/polish-name-variations
+git clone https://github.com/Selenuix/polish-name-variations
 
 # Install dependencies
 npm install
